@@ -14,6 +14,7 @@ import Spinner from '../components/Spinner'
 import shareIcon from '../assets/svg/shareIcon.svg'
 import { getDoc, doc } from 'firebase/firestore'
 
+
 function Listing() {
     const [listing, setListing] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -56,7 +57,7 @@ function Listing() {
                             <div
                                 className='swiperSlideDiv'
                                 style={{
-                                    background: `url(${listing.imgUrls[index]}) center no-repeat`,
+                                    background: `url(${listing.imageUrls[index]}) center no-repeat`,
                                     backgroundSize: 'cover',
                                 }}
                             ></div>
